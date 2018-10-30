@@ -46,7 +46,30 @@ PImage Grass;
 import processing.serial.*; 
 Serial myPort;    
 
+void TraceAvion(float Y, float AngleInclinaison) {
 
+noStroke();
+pushMatrix();
+translate(400, Y);
+rotate(radians(AngleInclinaison)); //in degres  ! 
+
+
+/*
+Drawing concept :  ;-)
+ 
+ |\___o__
+ ________>     
+ 
+ */
+
+scale(0.5);  //0.2 pas mal
+
+//unless drawing the plane "by hands", just display the stored picture instead. Note that the parameters 2 and 3 are half the picture size, to make sure that the plane rotates in his center.
+image(Plane, -111, -55, 223, 110); // 223 110 : picture size
+
+
+
+popMatrix(); //end of the rotation matrix
 
 //preparation
 void setup() 
