@@ -5,7 +5,7 @@
 
 
 int i, j; 
-
+// initialising score and DistancePlaneBird
 int Score ;
 float DistancePlaneBird;
 
@@ -203,4 +203,4 @@ void Ciel() {
 }
 
 
-//file end
+//file ends here
